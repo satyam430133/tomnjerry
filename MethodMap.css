@@ -93,14 +93,71 @@ body{
     text-decoration: none;
     color: white;
 }
-@media screen and(max-width:800px){
-    #hoodie,#jeans,#shirt{
-    height: auto;   
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    }
+
+#label{
+    color: white;
+    display: none;
 }
+#check{
+    display: none;
+}
+#check:checked~ #navbar ul{
+    display: block;
+}
+@media only screen and (max-width: 800px) {
+    #body{
+        font-size: small;
+    }
+    #hoodie,#jeans,#shirt{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #label{
+        display: block;
+    }
+    #navbar div ul{
+        position: absolute;
+        display: none;
+        height: auto;
+        width: 100%;   
+        top:  79px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.5); 
+    }
+    .navlist ul li a{
+        color: white;
+    }
+    #navbar div ul li{
+        display: block;
+    }
+
+  }
+  @media only screen and (max-width: 528px) {
+    #body{
+        font-size: small;
+    }
+    #hoodie,#jeans,#shirt{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #label{
+        display: block;
+    }
+    #navbar div ul{
+        position: absolute;
+        display: none;
+        height: auto;
+        width: 100%;   
+        top:  79px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.5); 
+    }
+    .navlist ul li a{
+        color: white;
+    }
+    #navbar div ul li{
+        display: block;
+    }
+
+  }
+
