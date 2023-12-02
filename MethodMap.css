@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+.heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 380px;
+    text-align: center;
+}
+.heading img{
+    height: 200px;
+}
+.call li a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+.front{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.front button{
+    height: 60px;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    background-color: aquamarine;
+    border: solid 2px white;
+    border-radius: 50px;
+}
+#hoodie,#jeans,#shirt{
+    height: auto;   
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin-top: 20px;
+    z-index: 0;
+}
+#img1,#img2,#img3{
+    height: 400px;
+    width: 300px;
+    box-shadow: 0px 0px 10px 10px white;
+    overflow: hidden;
+    z-index: 1;
+}
+#img1 img,#img2 img,#img3 img{
+    height: 400px;
+    width: 300px;
+}
+
+#hoodie #hover1,#jeans #hover2,#shirt #hover3{
+    background-color: whitesmoke;
+    padding: 10px;
+    height: 600px;
+    border: solid wheat;
+    overflow: hidden;            
+}
+#hover1:hover img,#hover2:hover img,#hover3:hover img{
+    transition: all 2s;
+    transform: scale(1.2);
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10%;
+    height: 110px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    font-size: 32px;
+    z-index: 2;
+}
+#navbar div img{
+    height: 100px;
+}
+#navbar div ul li{
+    display: inline;
+    padding: 50px;
+}
+#navbar div ul li a{
+    text-decoration: none;
+    color: white;
+}
